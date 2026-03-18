@@ -14,7 +14,7 @@ with app.app_context():
     db.session.commit()
 
     # Create Events
-    event1 = Event(name="Tech Future Conference", location="New York")
+    event1 = Event(name="Tech Conference", location="New York")
     event2 = Event(name="AI World Summit", location="San Francisco")
     db.session.add_all([event1, event2])
     db.session.commit()
